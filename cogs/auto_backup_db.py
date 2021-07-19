@@ -11,11 +11,10 @@ db_backup_loop_time = config.get('db_backup_loop_time')
 db_auto_backup_loop = config.get('db_auto_backup_loop')
 
 ## Firebase Database ##
-firebase_config = {"apiKey": "AIzaSyDe_xKKup4lVoPasLmAQW9Csc1zUzsxB0U","authDomain": "chuckwalla-69.firebaseapp.com",
-  "databaseURL": "https://chuckwalla-69.firebaseio.com","storageBucket": "chuckwalla-69.appspot.com",
+firebase_config = {"apiKey": "AIzaSyAr88_37tciNauGiRs73B_PrKGydwG_d1U","authDomain": "alert-result-315817.firebaseapp.com",
+  "databaseURL": "https://alert-result-315817-default-rtdb.europe-west1.firebasedatabase.app","storageBucket": "alert-result-315817.appspot.com",
   "serviceAccount": json.loads(os.getenv("serviceAccountKeyJSON"))}
 db = pyrebase.initialize_app(firebase_config).database()
-
 
 class AutoBackupDB(commands.Cog):
     def __init__(self, client):
