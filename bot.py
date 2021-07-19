@@ -17,7 +17,7 @@ prefix = str(config.get('prefix'))
 error_channel_id = config.get('error_channel_id')
 startup_channel_id = config.get('startup_channel_id')
 db_auto_backup_loop = config.get('db_auto_backup_loop')
-token = os.getenv('bruce_token')
+token = os.getenv('ODY2NjQ5NjU5MDI4NDA2MzEz.YPVoZA.nmW9RIYlaRuePPhIlOZEEftnh-o')
 
 ## Firebase ##
 ## Firebase Database ##
