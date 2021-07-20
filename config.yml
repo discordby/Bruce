@@ -1,41 +1,46 @@
 prefix: ','
 
+# Console Logging
+console_logging: True
+
 # Loops
 dbr6_loop: True
+dbcsgo_loop: False
 db_auto_backup_loop: True
 
 # Loop times
 dbr6_loop_time: 30.0 # minutes
+dbcsgo_loop_time: 32.0 # minutes
 db_backup_loop_time: 12.0 # hours
 
 # Server ID's
-diskito_id: 402356550133350411
+diskito_id: 614513381600264202
 
 # Role ID's
-owner_role_id: 402357508662099981
-mod_role_id: 475345534723555339
-bot_mod_role_id: 553150973581721600
+owner_role_id: 843498461487038466
+mod_role_id: 832322105134940180
+bot_mod_role_id: 831314045696475206
 r6s_role_id: 695320047022768138
 
 # Channel ID's
-startup_channel_id: 731042702237368400
-error_channel_id: 703303362065596546
-in_n_out_channel_id: 731024736456409159
-voice_log_channel_id: 802111450021232640
-
-# Channels that reaction roles work in
+startup_channel_id: 623069376240680971
+error_channel_id: 866640536360976384
+in_n_out_channel_id: 866640704092766218
+voice_log_channel_id: 866640704092766218
+valid_post_channels:
+  - 866640704092766218 # Trashposting
+  - 866640704092766218 # Cute and Blessed
+  - 866640704092766218 # Videoposting
 valid_rr_channels:
-  - 694161229475872808 # Welcome Hall
-  - 703289966842871868 # Role Select
-
-# Channels that reaction points work in
+  - 866640704092766218 # Welcome Hall
+  - 866640704092766218 # Role Select
 valid_rp_channels:
-  - 694161968239607818 # Trashposting
-  - 694162011960901713 # Videoposting
+  - 866640704092766218 # Trashposting
+  - 866640704092766218 # Videoposting
 
 # User ID's
-cndrd_account_id: 210471447649320970
-test_account_uid: 552570700171313187
+cndrd_account_id: 677584878635581450
+test_account_uid: 821527277871038464
 
 # Emote ID's
 honkhonk_emoji: 570667900529147914
@@ -44,7 +49,6 @@ yarrow_emoji: 784822110622974014 # Yellow arrow
 rarrow_emoji: 784822110836097094 # Red arrow
 
 # Reaction Point Emotes
-# Emotes that you recieve +rp for
 good_emotes:
   - 'ooo'
   - 'omegateef'
@@ -54,14 +58,13 @@ good_emotes:
   - 'AgrLove'
   - 'LemonJoy'
   - 'resttHA'
-# Emotes that you recieve -rp for
 bad_emotes:
   - 'WHEEZEtyKUNDO'
   - 'incredi_wut'
   - 'HonkHonk'
   - '_F'
   - 'Gay'
-
+  
 # So Dislash doesn't register the commands as global
 slash_guilds:
-  - 402356550133350411
+  - 614513381600264202
