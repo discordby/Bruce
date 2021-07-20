@@ -4,7 +4,7 @@ prefix: ','
 console_logging: True
 
 # Loops
-dbr6_loop: True
+dbr6_loop: False
 dbcsgo_loop: False
 db_auto_backup_loop: True
 
@@ -23,7 +23,7 @@ bot_mod_role_id: 831314045696475206
 r6s_role_id: 695320047022768138
 
 # Channel ID's
-startup_channel_id: 623069376240680971
+startup_channel_id: 824633682731728976
 error_channel_id: 866640536360976384
 in_n_out_channel_id: 866640704092766218
 voice_log_channel_id: 866640704092766218
