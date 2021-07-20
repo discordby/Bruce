@@ -1,16 +1,11 @@
 prefix: ','
 
-# Console Logging
-console_logging: True
-
 # Loops
-dbr6_loop: False
-dbcsgo_loop: False
+dbr6_loop: True
 db_auto_backup_loop: True
 
 # Loop times
 dbr6_loop_time: 30.0 # minutes
-dbcsgo_loop_time: 32.0 # minutes
 db_backup_loop_time: 12.0 # hours
 
 # Server ID's
