@@ -3,37 +3,22 @@ from discord.ext import commands
 from pytz import timezone
 import numpy as np
 
-from dislash import *
-
 from dotenv import load_dotenv
 load_dotenv()
 
-## Config Load ##
-config = yaml.safe_load(open('config.yml'))
-bot_mod_role_id = config.get('bot_mod_role_id')
-slash_guilds = config.get('slash_guilds')
-
-## Firebase Database ##
 ## Firebase Database ##
 firebase_config = {"apiKey": "AIzaSyAr88_37tciNauGiRs73B_PrKGydwG_d1U","authDomain": "alert-result-315817.firebaseapp.com",
   "databaseURL": "https://alert-result-315817-default-rtdb.europe-west1.firebasedatabase.app","storageBucket": "alert-result-315817.appspot.com",
   "serviceAccount": json.loads(os.getenv("serviceAccountKeyJSON"))}
 db = pyrebase.initialize_app(firebase_config).database()
 
-
-
-class Quote(commands.Cog):
+class Cicina(commands.Cog):
     def __init__(self, client):
-        """
-        Cicina command.
-        """
+        """Cicina command."""
         self.client = client
 
 
-    @slash_commands.command(
-        guild_ids=slash_guilds,
-        description="Cicina"
-    )
+    @commands.command()
     async def cicina(self, ctx):
         uid = ctx.author.id
         today = datetime.datetime.now(timezone('Europe/Prague')).strftime('%Y-%m-%d')
@@ -79,8 +64,9 @@ class Quote(commands.Cog):
             'cicina_count':new_count}
 
         db.child('users').child(uid).update(data)
-        await ctx.create_response(msg)
+        await ctx.send(msg)
+
 
 
 def setup(client):
-    client.add_cog(Quote(client))
+    client.add_cog(Cicina(client))
