@@ -49,17 +49,29 @@ class OnMessage(commands.Cog):
 
         # Server Totals Data
         st = db.child('serverTotals').get().val()
-        st_levels = st.get('levels', 0)
-        st_messages = st.get('messages', 0)
-        st_xp = st.get('xp', 0)
+        if st is None:
+          st_levels = 0
+          st_messages = 0
+          st_xp = 0
+        else:
+          st_levels = st.get('levels', 0)
+          st_messages = st.get('messages', 0)
+          st_xp = st.get('xp', 0)
 
         # User Data
         ud = db.child('users').child(uid).get().val()
-        current_lvl = ud.get('level', 0)
-        current_xp = ud.get('xp', 0)
-        last_xp_get = ud.get('last_xp_get', 0)
-        messages_count = ud.get('messages_count', 0)
-        money = ud.get('money', 0)
+        if ud is None:
+          current_lvl = 0
+          current_xp = 0
+          last_xp_get = 0
+          messages_count = 0
+          money = 0
+        else:
+          current_lvl = ud.get('level', 0)
+          current_xp = ud.get('xp', 0)
+          last_xp_get = ud.get('last_xp_get', 0)
+          messages_count = ud.get('messages_count', 0)
+          money = ud.get('money', 0)
 
         # Get the time since the user last posted a message
         since_last_mess = now - last_xp_get
