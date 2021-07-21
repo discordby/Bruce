@@ -1,9 +1,8 @@
-from func.stuff import add_spaces
 from func.levels import *
 from func.voice import *
 
 import pyrebase, yaml, json, discord, time, datetime, os
-from discord.ext import commands, tasks
+from discord.ext import commands
 from discord.utils import get
 from numerize import numerize
 from pytz import timezone
@@ -66,6 +65,25 @@ class OnVoiceStateUpdate(commands.Cog):
             msg = f"{username} left **{str(before.channel)}** *{nowR}*"
             await ch.send(msg)
 
+
+        #######################################################################
+
+        #######################################################################
+
+        # Widget voice state update
+        widget_voice_state = {
+            "voice": {
+                "deaf": after.deaf,
+                "mute": after.mute,
+                "self_mute": after.self_mute,
+                "self_deaf": after.self_deaf,
+                "self_stream": after.self_stream,
+                "self_video": after.self_video
+            }
+        }
+        if after.channel is None:
+            widget_voice_state = {"voice":"none"}
+        db.child("widget").child(uid).update(widget_voice_state)
 
         #######################################################################
 
