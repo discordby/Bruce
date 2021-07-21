@@ -10,6 +10,7 @@ db_backup_loop_time: 12.0 # hours
 
 # Server ID's
 diskito_id: 614513381600264202
+guild_id: 614513381600264202
 
 # Role ID's
 owner_role_id: 843498461487038466
