@@ -18,12 +18,11 @@ startup_channel_id = config.get('startup_channel_id')
 db_auto_backup_loop = config.get('db_auto_backup_loop')
 token = os.getenv('bruce_token')
 
-## Firebase Database ##
+## Firebase ##
 firebase_config = {"apiKey": "AIzaSyAr88_37tciNauGiRs73B_PrKGydwG_d1U","authDomain": "alert-result-315817.firebaseapp.com",
   "databaseURL": "https://alert-result-315817-default-rtdb.europe-west1.firebasedatabase.app","storageBucket": "alert-result-315817.appspot.com",
   "serviceAccount": json.loads(os.getenv("serviceAccountKeyJSON"))}
 db = pyrebase.initialize_app(firebase_config).database()
-
 
 ## Basic Bot Setup ##
 client = commands.Bot(command_prefix=prefix, intents=discord.Intents.all())
