@@ -1,5 +1,5 @@
 from discord.ext import commands
-import pyrebase, yaml, json, os
+import pyrebase, json, os
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -15,7 +15,6 @@ class OnUserUpdate(commands.Cog):
     def __init__(self, client):
         """
         On User Update Event.
-
         Updates users username and avatar url in the database
         whenever they change anything about their account
         """
