@@ -15,8 +15,8 @@ guild_id: 614513381600264202
 # Role ID's
 owner_role_id: 843498461487038466
 mod_role_id: 832322105134940180
-bot_mod_role_id: 831314045696475206
-r6s_role_id: 695320047022768138
+bot_mod_role_id: 618490583169761320
+r6s_role_id: 618490583169761320
 
 # Channel ID's
 startup_channel_id: 824633682731728976
@@ -24,15 +24,15 @@ error_channel_id: 866640536360976384
 in_n_out_channel_id: 866640704092766218
 voice_log_channel_id: 866640704092766218
 valid_post_channels:
-  - 866640704092766218 # Trashposting
-  - 866640704092766218 # Cute and Blessed
-  - 866640704092766218 # Videoposting
+  - 824633682731728976 # Trashposting
+  - 824633682731728976 # Cute and Blessed
+  - 824633682731728976 # Videoposting
 valid_rr_channels:
-  - 866640704092766218 # Welcome Hall
-  - 866640704092766218 # Role Select
+  - 824633682731728976 # Welcome Hall
+  - 824633682731728976 # Role Select
 valid_rp_channels:
-  - 866640704092766218 # Trashposting
-  - 866640704092766218 # Videoposting
+  - 824633682731728976 # Trashposting
+  - 824633682731728976 # Videoposting
 
 # User ID's
 cndrd_account_id: 677584878635581450
