@@ -16,7 +16,7 @@ guild_id: 123456
 owner_role_id: 123456
 mod_role_id: 123456
 bot_mod_role_id: 123456
-r6s_role_id: 618490583169761320
+r6s_role_id: 123456
 
 # Channel ID's
 startup_channel_id: 123456
