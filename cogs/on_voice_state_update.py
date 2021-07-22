@@ -192,7 +192,7 @@ class OnVoiceStateUpdate(commands.Cog):
             if levelUp:
                 dm_ch = await member.create_dm()
                 embed = discord.Embed(colour=discord.Colour.random())
-                embed.set_author(name=member, url='https://diskito.eu/leader.html')
+                embed.set_author(name=member, url='https://stats.discord.by/leader.html')
 
                 embed.add_field(name=f'You have just levelled up to {new_level}! Congrats!',
                                 value=f'You now have **{numerize.numerize(newXP)}** xp',
