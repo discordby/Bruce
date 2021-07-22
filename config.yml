@@ -9,40 +9,40 @@ dbr6_loop_time: 30.0 # minutes
 db_backup_loop_time: 12.0 # hours
 
 # Server ID's
-diskito_id: 614513381600264202
-guild_id: 614513381600264202
+diskito_id: 123456
+guild_id: 123456
 
 # Role ID's
-owner_role_id: 843498461487038466
-mod_role_id: 832322105134940180
-bot_mod_role_id: 618490583169761320
+owner_role_id: 123456
+mod_role_id: 123456
+bot_mod_role_id: 123456
 r6s_role_id: 618490583169761320
 
 # Channel ID's
-startup_channel_id: 824633682731728976
-error_channel_id: 866640536360976384
-in_n_out_channel_id: 866640704092766218
-voice_log_channel_id: 866640704092766218
+startup_channel_id: 123456
+error_channel_id: 123456
+in_n_out_channel_id: 123456
+voice_log_channel_id: 123456
 valid_post_channels:
-  - 824633682731728976 # Trashposting
-  - 824633682731728976 # Cute and Blessed
-  - 824633682731728976 # Videoposting
+  - 123456 # Trashposting
+  - 123456 # Cute and Blessed
+  - 123456 # Videoposting
 valid_rr_channels:
-  - 824633682731728976 # Welcome Hall
-  - 824633682731728976 # Role Select
+  - 123456 # Welcome Hall
+  - 123456 # Role Select
 valid_rp_channels:
-  - 824633682731728976 # Trashposting
-  - 824633682731728976 # Videoposting
+  - 123456 # Trashposting
+  - 123456 # Videoposting
 
 # User ID's
-cndrd_account_id: 677584878635581450
-test_account_uid: 821527277871038464
+cndrd_account_id: 123456
+test_account_uid: 123456
 
 # Emote ID's
-honkhonk_emoji: 570667900529147914
-garrow_emoji: 784822110723112974 # Green arrow
-yarrow_emoji: 784822110622974014 # Yellow arrow
-rarrow_emoji: 784822110836097094 # Red arrow
+honkhonk_emoji: 123456
+garrow_emoji: 123456 # Green arrow
+yarrow_emoji: 123456 # Yellow arrow
+rarrow_emoji: 123456 # Red arrow
 
 # Reaction Point Emotes
 good_emotes:
@@ -63,4 +63,4 @@ bad_emotes:
   
 # So Dislash doesn't register the commands as global
 slash_guilds:
-  - 614513381600264202
+  - 123456
