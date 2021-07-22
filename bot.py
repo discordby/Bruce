@@ -19,8 +19,8 @@ db_auto_backup_loop = config.get('db_auto_backup_loop')
 token = os.getenv('bruce_token')
 
 ## Firebase ##
-firebase_config = {"apiKey": "AIzaSyAr88_37tciNauGiRs73B_PrKGydwG_d1U","authDomain": "alert-result-315817.firebaseapp.com",
-  "databaseURL": "https://alert-result-315817-default-rtdb.europe-west1.firebasedatabase.app","storageBucket": "alert-result-315817.appspot.com",
+firebase_config = {"apiKey": "123456","authDomain": "123456",
+  "databaseURL": "123456","storageBucket": "123456",
   "serviceAccount": json.loads(os.getenv("serviceAccountKeyJSON"))}
 db = pyrebase.initialize_app(firebase_config).database()
 
